@@ -28,7 +28,7 @@
                         <li><a href='{{ url('/listerMangas') }}' date-toggle='collapse' data-target='.navbar-collapse.in'>Nos produits</a></li>
                         
                         <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Nos produits <b class="caret"></b></a>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Nos produits easy o lol <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Hommes</a></li>
                             <li><a href="#">Femmes</a></li>
