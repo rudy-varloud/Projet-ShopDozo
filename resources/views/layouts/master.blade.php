@@ -24,6 +24,18 @@
 
                     </div>
                     @if (Session::get('id') == 0)
+                    <ul class="nav navbar-nav">
+                        <li><a href='{{ url('/listerMangas') }}' date-toggle='collapse' data-target='.navbar-collapse.in'>Nos produits</a></li>
+                        
+                        <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Nos produits <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hommes</a></li>
+                            <li><a href="#">Femmes</a></li>
+                            <li><a href="#">Enfants</a></li>
+                        </ul>
+                    </li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">                             
                         <li><a href="{{url('/getLogin')}}" data-toggle="collapse" data-target=".navbar-collapse.in">Se connecter</a></li>
                     </ul>
@@ -31,7 +43,7 @@
                     @if (Session::get('id') > 0)
                     <div class='collapse navbar-collapse' id='navbar-collapse-target'>
                         <ul class='nav navbar-nav'>
-                            <li><a href='{{ url('/listerMangas') }}' date-toggle='collapse' data-target='.navbar-collapse.in'>Lister</a></li>
+                            <li><a href='{{ url('/listerMangas') }}' date-toggle='collapse' data-target='.navbar-collapse.in'>Nos produits</a></li>
                             <li><a href='{{ url('/listerMangasGenre') }}' date-toggle='collapse' data-target='.navbar-collapse.in'>Mangas par genre</a></li>
                             <li><a href='{{ url('/ajouterMangas') }}' date-toggle='collapse' data-target='.navbar-collapse.in'>Ajouter</a></li>
                         </ul>
